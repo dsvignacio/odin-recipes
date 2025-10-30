@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    --primary-color: rgb(135, 206, 250);
+    --secondary-color: rgb(199, 232, 189);
+    --success-color: rgb(40, 167, 69);
+    --text-color-dark: rgb(11, 66, 121);
+    --text-color-light: rgb(46, 150, 116);
+    --font-family-default: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: var(--font-family-default);
+    font-size: 35px;
+    color: var(--text-color-dark);
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.recipe-list-ul {
+    width: 400px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.recipe-list-ul > li {
+    margin: 20px;
+}
+
+.recipe-list-link {
+    background-color: var(--secondary-color);
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.recipe-list-link > strong {
+    font-family: var(--font-family-default);
+    font-size: 25px;
+    color: var(--text-color-light);
+}
+
+.recipe-list-link > img {
+    width: 100%;   
+}
