@@ -22,13 +22,13 @@
     padding: 20px;
 }
 
-.recipe-list-ul {
+ul {
     width: 400px;
-    list-style-type: none;
+    list-style: none;
     padding: 0px;
 }
 
-.recipe-list-ul > li {
+ul li {
     margin: 20px;
 }
 
