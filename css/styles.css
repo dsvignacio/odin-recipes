@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -20,31 +21,44 @@
     color: var(--text-color-dark);
     background-color: var(--primary-color);
     padding: 20px;
+    text-align: center;
 }
 
-ul {
-    width: 400px;
+.recipe-list {
     list-style: none;
-    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem;
 }
 
-ul li {
-    margin: 20px;
+@media (max-width: 550px) {
+    .recipe-list {
+        flex-direction: column;
+    }
 }
 
-.recipe-list-link {
-    background-color: var(--secondary-color);
-    display: block;
-    padding: 20px;
+.recipe-list li {
+    flex: auto;
+}
+
+.recipe-list a {
     text-decoration: none;
 }
 
-.recipe-list-link > strong {
+.recipe-list div {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-list strong {
     font-family: var(--font-family-default);
     font-size: 25px;
     color: var(--text-color-light);
 }
 
-.recipe-list-link > img {
-    width: 100%;   
+.recipe-list img {
+    width: 100%;
 }
